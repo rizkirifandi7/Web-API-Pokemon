@@ -60,7 +60,7 @@ function buildHtmlOfPokemon(id, name, type) {
     alt="${name} Pokemon"
   />
   <h3 class="poke-name">${name}</h3>
-  <p class="poke-id"># ${id}</p>
+  <p class="poke-id">#${id}</p>
   <p class="poke-type">${type}</p>
   `
 }
