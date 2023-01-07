@@ -65,7 +65,6 @@ function buildHtmlOfPokemon(id, name, type) {
   `
 }
 
-
 window.addEventListener("scroll", () => {
     if (window.scrollY > 300) toTopBtn.classList.add("show");
     else toTopBtn.classList.remove("show");
