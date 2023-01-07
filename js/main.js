@@ -41,14 +41,14 @@ async function loadNextPageAndRender() {
 }
 
 function createPokemonBox(pokemon) {
-  const { name, weight } = pokemon;
+  const { name } = pokemon;
   const id = pokemon.id.toString().padStart(3, "0");
   const type = pokemon.types[0].type.name
 
   const pokemonEl = document.createElement("div");
   pokemonEl.classList.add("poke-box");
   pokemonEl.style.backgroundColor = colors[type];
-  pokemonEl.innerHTML = buildHtmlOfPokemon(id, name, weight, type)
+  pokemonEl.innerHTML = buildHtmlOfPokemon(id, name, type)
   pokeContainer.appendChild(pokemonEl);
 }
 
